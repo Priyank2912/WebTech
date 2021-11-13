@@ -126,7 +126,47 @@
     margin-bottom: 3rem;
 }
 
-.button {
+.button{
+    font-size: 1.8rem;
+    background: #833ab4;
+    background: linear-gradient(to right, #f3e2cc, #927979, #88848b);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.button a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #1f145e;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.button:hover{
+    color: #fff;
+}
+
+.button:hover:after {
+  width: 100%;
+}
+
+.sign_up {
     padding: 1rem 3rem;
     border: none;
     background: var(--red);
@@ -139,8 +179,15 @@
     border-radius: 4px;
 }
 
-.button:hover {
-    background: var(--black);
+.sign_up a{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+.sign_up:hover{
+    background:  var(--black);
+    
 }
 
 .services {
