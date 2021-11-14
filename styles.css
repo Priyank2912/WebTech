@@ -169,8 +169,7 @@
 .sign_up {
     padding: 1rem 3rem;
     border: none;
-    background: var(--red);
-    color: var(--white);
+    background: linear-gradient(to right, #f3e2cc, #927979, #88848b);
     font-size: 1rem;
     cursor: pointer;
     outline: none;
@@ -186,9 +185,10 @@
   text-decoration: none;
 }
 .sign_up:hover{
-    background:  var(--black);
-    
+    background: #1f145e;
 }
+
+
 
 .services {
     padding: 8rem calc((100vw-1200px) / 2);
