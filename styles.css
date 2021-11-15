@@ -495,9 +495,9 @@ form {
 }
 
 .footer {
-  padding: 3rem calc((100vw) / 3);
+  padding: 4rem calc((100vw-1240px) / 3);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   color: var(--white);
   background: var(--black);
 }
@@ -523,7 +523,7 @@ form {
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .footer__links {
