@@ -6,6 +6,9 @@ function validateform() {
     var date = document.forms["f1"]["date_join"].value
     var gender = document.forms["f1"]["gender"].value
 
+    var checkbox = document.forms["f1"]["check_box"];
+
+
 
     name = name.trim();
     address = address.trim();
@@ -19,6 +22,7 @@ function validateform() {
         return false;
     }
 
+
     if (!number.match(/^[0-9]{10}$/)) {
         alert("Enter valid 10 digit phone number (Don't Enter Country Code)");
         return false;
@@ -27,6 +31,12 @@ function validateform() {
     if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
         alert("Enter valid Email id")
         alert("Email format: abc@xyz.pqr")
+        return false;
+    }
+
+    if (checkbox[0].checked == false && checkbox[1].checked == false && checkbox[2].checked == false && checkbox[3].checked == false) {
+        alert("Select atleast one Activity");
+        return false;
     }
 
 
