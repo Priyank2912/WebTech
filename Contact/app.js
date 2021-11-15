@@ -39,5 +39,8 @@ function validateform() {
         return false;
     }
 
+    else {
+        alert("DONE")
+    }
 
 }
