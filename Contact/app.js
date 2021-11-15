@@ -4,6 +4,7 @@ function validateform() {
     var email = document.forms["f1"]["email"].value
     var number = document.forms["f1"]["number"].value
     var date = document.forms["f1"]["date_join"].value
+    var gender = document.forms["f1"]["gender"].value
 
 
     name = name.trim();
@@ -13,7 +14,7 @@ function validateform() {
     date = date.trim();
 
 
-    if (name.length == 0 || address.length == 0 || email.length == 0 || number.length == 0 || date.length == 0) {
+    if (name.length == 0 || address.length == 0 || email.length == 0 || number.length == 0 || date.length == 0 || gender.length == 0) {
         alert("Fill All required field");
         return false;
     }
@@ -27,8 +28,6 @@ function validateform() {
         alert("Enter valid Email id")
         alert("Email format: abc@xyz.pqr")
     }
-
-
 
 
 }
