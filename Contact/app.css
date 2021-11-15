@@ -1,0 +1,59 @@
+body {
+    font-family: 'Anaheim', sans-serif;
+    font-size: 1.2em;
+}
+
+#body{
+    background-color: lightgoldenrodyellow;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#survy_form{
+    max-width: 50%;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 1em;
+    padding: 1em 1em;
+}
+
+fieldset{
+    margin: 0.5em;
+    border: 1px solid lightgray;
+}
+
+legend{
+    font-weight: 700;
+}
+
+fieldset > div{
+    margin: 1em 0;
+}
+
+fieldset #extra_margin{
+    margin: 0em;
+}
+
+button{
+    padding:5px ;
+    margin: 0.5em;
+    font-size:1em;
+    background-color: red;
+    color: white;
+    border:none;
+    border-radius: 2px;
+
+}
+
+#submitbtn{
+    display: flex;
+    justify-content: center;
+}
+
