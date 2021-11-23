@@ -1,0 +1,258 @@
+:root {
+  --red: #f9032f;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("./images/gym-1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero__content {
+  color: var(--white);
+  padding: 3rem 1rem;
+  line-height: 1;
+}
+
+.hero__content h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.hero__content p {
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  margin-bottom: 3rem;
+}
+
+.button {
+  font-size: 1.8rem;
+  background: linear-gradient(to right, #f3e2cc, #927979, #88848b);
+  padding: 15px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.35s;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.button:hover {
+ background: linear-gradient(to right, #f0cea2, #997373, #9f91aa);
+  color: #fff;
+}
+
+.button:hover:after {
+  width: 100%;
+}
+
+.sign_up {
+  padding: 1rem 3rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to right, #f3e2cc, #927979, #88848b);
+  font-size: 1rem;
+  cursor: pointer;
+   z-index: 2;
+  outline: none;
+  transition: 0.7s ease;
+  text-decoration: none;
+  border-radius: 4px;
+
+  
+}
+
+.sign_up:hover {
+   background: linear-gradient(to right, #f0cea2, #997373, #9f91aa);
+  color: #fff;
+}
+
+.services {
+  padding: 8rem calc((100vw-1200px) / 2);
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+.services__img {
+  width: 100%;
+  height: 100%;
+}
+
+.topline {
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.services__heading {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.services__features {
+  list-style: none;
+}
+
+.services__feature {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+.fa-check-circle {
+  margin-right: 0.5rem;
+  color: var(--red);
+}
+
+@media screen and (max-width: 760px) {
+  .services__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.memberships {
+  background: var(--black);
+  color: var(--white);
+  padding: 2rem calc((100vw - 1100px) / 2);
+  text-align: center;
+}
+
+.memberships h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  padding: 0 1rem;
+}
+
+.membership__desc {
+  margin-bottom: 3rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 1rem;
+}
+
+.membership__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #171819;
+  text-align: center;
+  border-style:dashed;
+  border-width: 150px;
+  border-color:rgb(58, 63, 61);
+}
+
+.membership__card {
+  padding: 2rem;
+  min-height: 450px;
+  width: 325px;
+  background: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.membership__perks {
+  min-height: 150px;
+}
+
+.membership__card p {
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--red);
+}
+
+.membership__card h3 {
+  font-size: clamp(1rem, 5vw, 2rem);
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .membership__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership__card {
+    width: 90%;
+    margin: auto ;
+    background-color: white;
+  }
+}
+
+.table_title_1{
+  color: gray;
+  text-align: center;
+  font-size: 22px;
+}
+
+.table_title_2{
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 36px;
+
+}
+
+.workout_timetable{
+  color: black;
+  background-color: #171819;
+  padding: 5%;
+}
+
+.table{
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+th, td {
+  background: #ddd;
+  border-bottom: 5px solid #171819; 
+  border-left: 5px solid #171819;
+  border-right: 5px solid #171819;
+}
+
+.heading{
+  background-color: #F13A11;
+}
