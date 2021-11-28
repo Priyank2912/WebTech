@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get-Fit Fitness Gym</title>
 
     <!-- Google font and Symbols -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -15,17 +15,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/card.css">
 
     <!-- JS -->
-    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="../app.js"></script>
 </head>
 
 <body>
     <nav class="navbar">
-        <a href="index.html" class="navbar__logo">Get-Fit</a>
+        <a href="../index.html" class="navbar__logo">Get-Fit</a>
         <div class="navbar__toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -39,26 +42,137 @@
         </div>
     </nav>
 
-
-
-
-
-
-
-
-
+    <div class="memberships">
+        <h1 class="animate-membership">View Our Products</h1>
+        <p class="membership__desc animate-membership">Get started today and receive 15% off on your first order</p>
+        <div class="membership__wrapper">
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="mass.jpg" >
+                    <h3>Mass Protien</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>For those who struggle to eat enough during the day, mass gainer supplements offer a convenient and effective way to boost calorie intake.</p>
+                    <p>1700 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="bcaa.jpg">
+                    <h3>BCAA</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>It's best to take BCAA supplements — whether tablet or powder form — before a workout, up to 15 minutes pre-workout.</p>
+                    <p>2500 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="bar.jpg" >
+                    <h3 text-weight="bold">Protien Bar </h3>
+                </div>
+                <div class="membership__perks">
+                    <p>A healthy protein bar that is Fiber-rich, has No Artificial Sweeteners and Trans Fat. A protein bar powered with the goodness of Natural Ginseng and Triple Blend Protein.</p>
+                    <p>750 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="membership__desc animate-membership">Get this high-end equipment today and get 500 Rs off!!!</p>
+        <br>
+        <div class="membership__wrapper">
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="dumb.jpg">
+                    <h3>Dumbbells</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>Dumbbells are great for strength training, specifically loading the skeletal system to improve bone density!!!.</p>
+                    <p>6000 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="tread.jpg">
+                    <h3>Tread Mill</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>Using a treadmill, you can reduce the risk of heart disease, diabetes, and joint related health problems. You can increase your muscle strength and stamina.</p>
+                    <p>35000 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="ball.jpg">
+                    <h3>Yoga Ball</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>A yoga ball is often used during exercise routines to help expand range of motion and improve balance. But with a growing number of people sitting while they work has moved from the gym to the office. </p>
+                    <p>1000 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="membership__desc animate-membership">Lets gear up for some new outfits for the gym!!!</p>
+        <br>
+        <div class="membership__wrapper">
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="shoes.jpg">
+                    <h3>Workout Shoes</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>A proper workout shoes can make a difference between an exillent workout and a just simple and tiresome exercising at gym.</p>
+                    <p>3000 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="shirt.jpg">
+                    <h3>Workout Tees</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>Look cool and stay comfortable ith all new jersey from our shop to provide more comfort and style.</p>
+                    <p>1000 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+            <div class="membership__card animate-card">
+                <div class="membership__title">
+                    <img src="gloves.jpg">
+                    <h3>Workout Gloves</h3>
+                </div>
+                <div class="membership__perks">
+                    <p>Give some comfort to your hands while doing a heavy workout all day long from our in house gloves.</p>
+                    <p>800 Rs.</p>
+                </div>
+                <button class="sign_up"><a href="../Contact/index.html">Get Now</a></button>
+            </div>
+        </div>
+        <br>
+    </div>
+    </div>
 
     <div class="email">
         <div class="email__content">
             <h1 class="animate-email">Get Access to Members Only Perks</h1>
             <p class="animate-email">Sign up for our newsletter below to get 1200 Rs off your first personal training
                 session!</p>
-            <!-- <form action="Contact/index.html" method="post" class="animate-email"> -->
-            <div class="form__wrap">
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-                <button class="sign_up" onclick="document.location='Contact/index.html'"><b>Sign Up</b></button>
-            </div>
-            <!-- </form> -->
+            <form action="#" method="post" class="animate-email">
+                <div class="form__wrap">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <button class="sign_up"><a href="../Contact/index.html">Sign Up</a></button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -81,8 +195,8 @@
         <div class="footer__wrapper">
             <div class="footer__links">
                 <h2 class="footer__title">Memberships</h2>
-                <a href="Plans/index.html" class="footer__link">Pricing</a>
-                <a href="Plans/index.html" class="footer__link">Plans</a>
+                <a href="plans.html" class="footer__link">Pricing</a>
+                <a href="plans.html" class="footer__link">Plans</a>
                 <a href="Contact/index.html" class="footer__link">FAQ</a>
             </div>
             <div class="footer__links">
@@ -94,6 +208,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
