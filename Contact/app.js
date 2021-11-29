@@ -18,13 +18,13 @@ function validateform() {
 
 
     if (name.length == 0 || address.length == 0 || email.length == 0 || number.length == 0 || date.length == 0 || gender.length == 0) {
-        alert("Fill All required field");
+        alert("Please Fill All required field");
         return false;
     }
 
 
     if (!number.match(/^[0-9]{10}$/)) {
-        alert("Enter valid 10 digit phone number (Don't Enter Country Code)");
+        alert("Please Enter valid 10 digit phone number (Don't Enter Country Code)");
         return false;
     }
 
@@ -35,12 +35,12 @@ function validateform() {
     }
 
     if (checkbox[0].checked == false && checkbox[1].checked == false && checkbox[2].checked == false && checkbox[3].checked == false) {
-        alert("Select atleast one Activity");
+        alert("Please Select atleast one Activity");
         return false;
     }
 
     else {
-        alert("DONE")
+        alert("Your Submission form is submitted holding a reference number " + Math.floor(Math.random() * 10000000000 + 1000));
     }
 
 }
